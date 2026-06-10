@@ -1,1 +1,162 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Água que Alimenta - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de acessibilidade fixo -->
+    <div class="acessibilidade" id="acessibilidade">
+        <button id="aumentarFonte" aria-label="Aumentar fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir fonte">A-</button>
+        <button id="altoContraste" aria-label="Ativar alto contraste">🎨 Contraste</button>
+    </div>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <h1>💧 Água que Alimenta</h1>
+            <p class="tagline">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre o tema</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio" class="secao">
+            <div class="container">
+                <h2>🌱 Bem-vindo ao projeto Água que Alimenta</h2>
+                <p>Você sabia que a água é o recurso mais precioso para a agricultura e para a vida? Nosso projeto tem o objetivo de conscientizar estudantes do Ensino Fundamental sobre a <strong>poluição dos rios e nascentes</strong> e ensinar formas simples de <strong>economizar água</strong> no dia a dia.</p>
+                <img src="https://images.pexels.com/photos/1365425/water-river-nature-flow-1365425.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rio limpo com natureza ao redor" class="imagem-destaque">
+                <p class="credito-imagem">📷 Fotografia própria (representativa) | Rio preservado, fonte de vida para o agro</p>
+            </div>
+        </section>
+
+        <!-- Seção Sobre o tema -->
+        <section id="sobre" class="secao fundo-claro">
+            <div class="container">
+                <h2>💧 Sobre o tema: Água que Alimenta</h2>
+                <article>
+                    <h3>Por que escolhemos esse nome?</h3>
+                    <p>A água é essencial para alimentar as plantações, os animais e também as pessoas. No campo, sem água de qualidade, não há produção forte e sustentável. O nome <strong>"Água que Alimenta"</strong> representa a união entre a agricultura e o cuidado com o meio ambiente.</p>
+                </article>
+                <article>
+                    <h3>Relação com o Concurso Agrinho 2026</h3>
+                    <p>O tema do concurso é <strong>"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</strong>. Nosso projeto mostra que é possível produzir alimentos sem poluir rios e nascentes, usando a água de forma consciente.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Problema ambiental -->
+        <section id="problema" class="secao">
+            <div class="container">
+                <h2>⚠️ O problema: Poluição dos rios e nascentes</h2>
+                <p>Muitos rios e nascentes estão sendo poluídos por agrotóxicos, esgoto, lixo e produtos químicos usados na agricultura. Isso prejudica a vida dos animais, a saúde das pessoas e a produção de alimentos.</p>
+                <div class="cards">
+                    <div class="card">
+                        <h4>🚫 Água contaminada</h4>
+                        <p>Plantações que usam água poluída podem produzir alimentos ruins para a saúde.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🐟 Morte de animais</h4>
+                        <p>Peixes e outros seres vivos morrem quando a água dos rios fica suja.</p>
+                    </div>
+                    <div class="card">
+                        <h4>💸 Prejuízo ao agro</h4>
+                        <p>Agricultores gastam mais dinheiro para tratar a água ou buscar fontes limpas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Soluções sustentáveis -->
+        <section id="solucoes" class="secao fundo-claro">
+            <div class="container">
+                <h2>🌿 Soluções sustentáveis</h2>
+                <p>Podemos ajudar a resolver esse problema com atitudes simples dentro e fora do campo:</p>
+                <ul class="lista-solucoes">
+                    <li>✅ Economizar água no banho, na torneira e na irrigação</li>
+                    <li>✅ Não jogar lixo nos rios e nascentes</li>
+                    <li>✅ Usar agrotóxicos de forma controlada e dar preferência a produtos orgânicos</li>
+                    <li>✅ Plantar árvores nas margens dos rios (mata ciliar)</li>
+                    <li>✅ Tratar o esgoto antes de devolver à natureza</li>
+                </ul>
+                <img src="https://images.pexels.com/photos/3616246/close-up-of-river-flowing-through-field-3616246.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rio limpo no meio da natureza" class="imagem-pequena">
+            </div>
+        </section>
+
+        <!-- Seção Calculadora de água (funcionalidade JavaScript) -->
+        <section id="calculadora" class="secao">
+            <div class="container">
+                <h2>🧮 Calculadora de consumo de água</h2>
+                <p>Descubra quantos litros de água você gasta por dia e veja como economizar!</p>
+                
+                <div class="calculadora">
+                    <div class="campo">
+                        <label for="banho">⏱️ Minutos por dia no banho:</label>
+                        <input type="number" id="banho" min="0" max="60" value="10" step="1">
+                        <span class="dica">(Chuveiro gasta ~15 litros por minuto)</span>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="torneira">🚰 Minutos por dia com torneira aberta (escovar dentes, lavar louça, etc.):</label>
+                        <input type="number" id="torneira" min="0" max="60" value="15" step="1">
+                        <span class="dica">(Torneira gasta ~10 litros por minuto)</span>
+                    </div>
+                    
+                    <button id="calcularBtn">💧 Calcular consumo</button>
+                    
+                    <div class="resultado" id="resultado">
+                        <h3>Resultado:</h3>
+                        <p id="litrosDia">--</p>
+                        <p id="mensagemEconomia">--</p>
+                    </div>
+                </div>
+                
+                <p class="nota">* Valores médios para conscientização. Reduza seu tempo no banho e feche a torneira sempre que possível!</p>
+            </div>
+        </section>
+
+        <!-- Seção Dicas finais -->
+        <section id="dicas" class="secao fundo-claro">
+            <div class="container">
+                <h2>💡 Dica do dia para economizar água</h2>
+                <div class="dica-dia">
+                    <p id="dicaAleatoria">Clique no botão para receber uma dica sustentável!</p>
+                    <button id="novaDicaBtn">🌱 Nova dica</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>🌾 Projeto Agrinho 2026 - "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</p>
+            <p>Desenvolvido por Rhyan Eduardo Santana da Cruz | Turma: [Sua Turma] | Água que Alimenta 💧</p>
+            <p>📷 Imagens ilustrativas - Fotografias próprias do aluno</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

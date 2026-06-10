@@ -1,1 +1,342 @@
 
+/* style.css */
+/* Reset básico e configurações iniciais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f7f0;  /* Fundo verde bem claro = natureza */
+    color: #1a3b2f;  /* Texto verde escuro */
+    font-size: 18px; /* Tamanho base */
+    transition: all 0.3s ease;
+}
+
+/* Container para centralizar conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1a6b3c, #0d3b21);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #0d3b21;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1a6b3c;
+    border-radius: 5px;
+}
+
+/* Seções */
+.secao {
+    padding: 50px 0;
+    border-bottom: 1px solid #c8e6c9;
+}
+
+.fundo-claro {
+    background-color: #e8f5e9;
+}
+
+h2 {
+    color: #0d3b21;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    border-left: 5px solid #1a6b3c;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #1a6b3c;
+    margin: 20px 0 10px;
+}
+
+/* Cards de problema */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 200px;
+    border-left: 5px solid #1a6b3c;
+}
+
+.card h4 {
+    color: #0d3b21;
+    margin-bottom: 10px;
+}
+
+/* Lista de soluções */
+.lista-solucoes {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.lista-solucoes li {
+    margin: 10px 0;
+}
+
+/* Imagens */
+.imagem-destaque {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.imagem-pequena {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.credito-imagem {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Calculadora */
+.calculadora {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.dica {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #1a6b3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: inherit;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0d3b21;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+}
+
+.resultado h3 {
+    margin-top: 0;
+}
+
+#litrosDia {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1a6b3c;
+}
+
+#mensagemEconomia {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Dica do dia */
+.dica-dia {
+    background-color: #c8e6c9;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+#dicaAleatoria {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0d3b21;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+/* ========== ACESSIBILIDADE ========== */
+.acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0d3b21;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.acessibilidade button {
+    background: white;
+    color: #0d3b21;
+    padding: 8px 15px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.acessibilidade button:hover {
+    background: #e8f5e9;
+}
+
+/* Classe para alto contraste */
+.alto-contraste {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste a,
+.alto-contraste button,
+.alto-contraste .card,
+.alto-contraste .calculadora,
+.alto-contraste .dica-dia {
+    background-color: black !important;
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.alto-contraste img {
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .acessibilidade {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+    
+    .acessibilidade button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculadora {
+        padding: 15px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
